@@ -1,0 +1,59 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#result {
+    width: 210px;
+    margin: 5px;
+    height: 30px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 220px; /* Adjust this value as needed */
+    margin: auto;
+}
+
+.button {
+    width: 50px; /* Adjust this value as needed */
+    height: 50px;
+    font-size: 24px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #c0c0c0;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.button:active {
+    background-color: #a0a0a0;
+}
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 buttons per row */
+        max-width: 200px; /* Adjust the max width of the container */
+    }
+
+    .button {
+        height: 40px; /* Adjust the size of the buttons */
+        font-size: 20px;
+    }
+}

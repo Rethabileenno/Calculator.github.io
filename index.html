@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <div class="container">
+     
+        <input id="result" type="text" readonly>
+        <br/>
+            <!-- <div class="button-row">
+                <button class="button" onclick="performOperation('sin')">sin</button>
+                <button class="button" onclick="performOperation('cos')">cos</button>
+                <button class="button" onclick="performOperation('tan')">tan</button>
+                <button class="button" onclick="performOperation('!')">!</button>
+
+            </div> -->
+
+            <div class="button-row">
+                <button class="button" onclick="performOperation('sqrt')">√</button>
+                <button class="button" onclick="performOperation('%')">%</button>
+                <button class="button" onclick="performOperation('**')">^</button>
+                <button class="button" onclick="appendNumber(Math.PI)">π</button>
+            </div>
+
+            <div class="button-row">
+                    <button class="button" onclick="appendNumber('7')">7</button>
+                    <button class="button" onclick="appendNumber('8')">8</button>
+                    <button class="button" onclick="appendNumber('9')">9</button>
+                    <button class="button" onclick="performOperation('+')">+</button>
+            </div>
+
+            <div class="button-row">
+                <button class="button" onclick="appendNumber('4')">4</button>
+                <button class="button" onclick="appendNumber('5')">5</button>
+                <button class="button" onclick="appendNumber('6')">6</button>
+                <button class="button" onclick="performOperation('-')">-</button>
+            </div>
+
+            <div class="button-row">
+                <button class="button" onclick="appendNumber('1')">1</button>
+                <button class="button" onclick="appendNumber('2')">2</button>
+                <button class="button" onclick="appendNumber('3')">3</button>
+                <button class="button" onclick="performOperation('*')">*</button>
+            </div>
+
+            <div class="button-row">
+                <button class="button" onclick="appendNumber('.')">.</button>
+                <button class="button" onclick="appendNumber('0')">0</button>
+                <button class="button" onclick="appendNumber(',')">,</button>
+                <button class="button" onclick="performOperation('/')">/</button>
+             
+                
+            </div>
+
+            <div class="button-row">
+                <button class="button" onclick="appendNumber('(')">(</button>
+                <button class="button" onclick="appendNumber(')')">)</button>
+                <br/>
+                    <!-- Add more buttons for other numbers and operations -->
+                    <button class="button" onclick="clearResult()">C</button>
+                    <button class="button" style="background-color: chocolate;" onclick="calculateResult()">=</button>
+            </div>
+
+        </div>
+
+
+    <script src="calcu.js"></script>
+</body>
+</html>
